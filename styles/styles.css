@@ -14,3 +14,11 @@ body {
 .rounded-lg {
   border-radius: 2rem !important;
 }
+
+/* .service-section {
+  transform: translateX(-100%);
+} */
+
+/* .service-asset {
+  transform: translateY(-500px);
+} */
