@@ -254,31 +254,179 @@
     </section>
 
     <section class="blogs-section px-4 my-24">
-      <div class="content container mx-auto">
-        <div class="top-row flex flex-wrap gap-8 justify-between items-center">
+      <div class="content container mx-auto relative">
+        <div
+          class="top-row flex bg-white flex-wrap gap-8 justify-between items-center z-[100]"
+        >
           <h3 class="text-4xl font-semibold z-[1]">Our Blogs & News</h3>
           <div class="blog-cta">
             <a
               href="./contact.html"
-              class="text-lg font-semibold border border-orange-500 whitespace-nowrap px-8 py-4 rounded-full text-orange-500 hover:bg-orange-600 hover:text-white"
-              >Browse All</a
-            >
+              class="font-semibold border border-gray-950 px-5 py-3 rounded-full hover:bg-gray-950 hover:text-white flex justify-center"
+              >Browse All
+            </a>
           </div>
         </div>
-        <div class="blog-grid grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-          <div class="blog-item p-5 rounded-lg bg-orange-100">
-            <h1 class="text-3xl">Hello</h1>
+        <div
+          class="blog-grid grid grid-cols-1 md:grid-cols-2 gap-12 mt-6 z-[0]"
+        >
+          <div class="blog-item flex flex-col gap-6">
+            <div class="img-wrapper rounded-lg w-full overflow-hidden">
+              <img
+                src="https://st3.depositphotos.com/1004221/13859/i/450/depositphotos_138595846-stock-photo-technical-repairs-motherboard-in-service.jpg"
+                alt=""
+                class="rounded-lg h-96 object-cover"
+                style="width: 100%"
+              />
+            </div>
+            <h1 class="text-3xl font-medium">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+              ipsum dolor.
+            </h1>
+            <p class="text-zinc-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis vel asperiores adipisci molestiae cupiditate illo
+              nihil? Fugit harum excepturi hic dolorum minus. Hic, laudantium?
+            </p>
+            <div class="h-px bg-zinc-400 mt-3 mb-3"></div>
+            <div class="blog-ctas flex justify-between items-center">
+              <div class="blog-cta">
+                <a
+                  href="./contact.html"
+                  class="arrow-btn font-semibold bg-gray-950 px-6 py-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="12"
+                    viewBox="0 0 26 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-zinc-500">2023 . 08 . 29</p>
+            </div>
           </div>
-          <div class="blog-item p-5 rounded-lg bg-orange-100"></div>
-          <div class="blog-item p-5 rounded-3xl bg-orange-100"></div>
-          <div class="blog-item p-5 rounded-lg bg-orange-100"></div>
+
+          <div class="blog-item flex flex-col gap-6">
+            <div class="img-wrapper rounded-lg w-full overflow-hidden">
+              <img
+                src="https://img.freepik.com/free-vector/computer-repair-support-service-isometric-illustration_1284-57663.jpg"
+                alt=""
+                class="rounded-lg h-96 object-cover"
+                style="width: 100%"
+              />
+            </div>
+            <h1 class="text-3xl font-medium">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+              ipsum.
+            </h1>
+            <p class="text-zinc-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis vel asperiores adipisci molestiae cupiditate illo
+              nihil? Fugit harum excepturi hic dolorum minus. Hic, laudantium?
+            </p>
+            <div class="h-px bg-zinc-400 mt-3 mb-3"></div>
+            <div class="blog-ctas flex justify-between items-center">
+              <div class="blog-cta">
+                <a
+                  href="./contact.html"
+                  class="arrow-btn font-semibold bg-gray-950 px-6 py-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="12"
+                    viewBox="0 0 26 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-zinc-500">2023 . 08 . 29</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <footer
+      class="bg-black rounded-t-[2rem] md:rounded-t-[4rem] py-16 md:py-24 px-4 mt-24"
+    >
+      <div
+        class="container mx-auto grid gap-16 justify-between grid-cols-1 md:grid-cols-3 lg:grid-cols-5"
+      >
+        <div class="footer-item flex flex-col gap-4 col-span-2">
+          <h1 class="text-2xl text-white font-bold">XPRESS</h1>
+          <div class="social-icons flex gap-4">
+            <a
+              href=""
+              class="bg-gray-800 p-3 rounded-full flex justify-center items-center text-gray-400 hover:text-white transition-colors duration-400"
+            >
+              <i class="fa-brands fa-facebook text-2xl"></i>
+            </a>
+
+            <a
+              href=""
+              class="bg-gray-800 p-3 rounded-full flex justify-center items-center text-gray-400 hover:text-white transition-colors duration-400"
+            >
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a
+              href=""
+              class="bg-gray-800 p-3 rounded-full flex justify-center items-center text-gray-400 hover:text-white transition-colors duration-400"
+            >
+              <i class="fa-brands fa-x-twitter text-2xl"></i>
+            </a>
+          </div>
+
+          <div class="line h-px w-full bg-gray-600 mt-1"></div>
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odit
+            blanditiis earum enim expedita alias nemo quis quibusdam pariatur
+            minus!
+          </p>
+        </div>
+
+        <div class="footer-item flex flex-col gap-4">
+          <h2 class="text-white text-lg font-bold">Menu</h2>
+          <div class="footer-links flex flex-col gap-3">
+            <a href="" class="text-gray-400 hover:text-gray-200">Home</a>
+            <a href="" class="text-gray-400 hover:text-gray-200">Services</a>
+            <a href="" class="text-gray-400 hover:text-gray-200">Blogs</a>
+            <a href="" class="text-gray-400 hover:text-gray-200">FAQs</a>
+          </div>
+        </div>
+
+        <div class="footer-item flex flex-col gap-4">
+          <h2 class="text-white text-lg font-bold">Contact US</h2>
+          <div class="footer-links flex flex-col gap-3">
+            <a href="" class="text-gray-400 hover:text-gray-200">Home</a>
+            <a href="" class="text-gray-400 hover:text-gray-200">Services</a>
+            <a href="" class="text-gray-400 hover:text-gray-200">Blogs</a>
+            <a href="" class="text-gray-400 hover:text-gray-200">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.24/dist/lenis.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script src="./scripts/script.js"></script>
   </body>

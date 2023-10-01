@@ -35,40 +35,26 @@ gsap.from(".hero-asset-i", {
   ease: "power2.out",
 });
 
-// gsap.utils.toArray(".service-item").forEach((item) => {
-//   let tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: item,
-//       start: "top center",
-//       end: "bottom center",
-//       // markers: true,
-//     },
-//   });
+const arrowBtn = document.querySelectorAll(".arrow-btn");
 
-//   tl.from(item, {
-//     duration: 1,
-//     y: -100,
-//     opacity: 0,
-//     ease: "power2.out",
-//     stagger: 0.5,
-//   });
+arrowBtn.forEach((btn) => {
+  btn.addEventListener("mouseover", () => {
+    gsap.to(btn, {
+      duration: 0.5,
+      //expand width from initial position
+      width: 95,
+      ease: "power2.out",
+    });
+  });
 
-//   let tl2 = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: item.querySelector(".service-asset"),
-//       start: "top center",
-//       end: "bottom center",
-//       scrub: true,
-//       markers: true,
-//     },
-//   });
-
-//   tl2.to(item.querySelector(".service-asset"), {
-//     duration: 1,
-//     y: 0,
-//     ease: "power2.out",
-//   });
-// });
+  btn.addEventListener("mouseout", () => {
+    gsap.to(btn, {
+      duration: 0.5,
+      width: 80,
+      ease: "power2.out",
+    });
+  });
+});
 
 gsap.utils.toArray(".service-item").forEach((item) => {
   let tl = gsap.timeline({
@@ -103,7 +89,7 @@ gsap.utils.toArray(".service-item").forEach((item) => {
     });
 
     tl2.from(asset, {
-      duration: 2,
+      duration: 8,
       y: -400,
       opacity: 0,
       // amazing ease effect
@@ -111,6 +97,26 @@ gsap.utils.toArray(".service-item").forEach((item) => {
       stagger: 0.5,
     });
   }
+});
+
+gsap.utils.toArray(".blog-item").forEach((item) => {
+  let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: item,
+      start: 800,
+      // start: "top center",
+      end: 1800,
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  tl3.from(item, {
+    duration: 4,
+    y: 200,
+    opacity: 0,
+    ease: "power2.out",
+  });
 });
 
 const lenis = new Lenis();
