@@ -79,7 +79,7 @@
     </nav>
     <section class="px-4 hero-section mt-5">
       <div
-        class="container mx-auto content py-9 px-5 bg-orange-50 rounded-lg relative overflow-hidden flex items-center justify-start flex-col gap-10"
+        class="container mx-auto h-[80vh] content px-5 bg-orange-50 rounded-lg relative overflow-hidden flex items-center justify-center flex-col gap-10"
       >
         <img
           src="./assets/hero-asset-1.png"
@@ -358,12 +358,12 @@
     </section>
 
     <footer
-      class="bg-black rounded-t-[2rem] md:rounded-t-[4rem] py-16 md:py-24 px-4 mt-24"
+      class="bg-black flex flex-col gap-10 rounded-t-[2rem] md:rounded-t-[4rem] pt-16 md:pt-24 px-4 mt-24"
     >
       <div
         class="container mx-auto grid gap-16 justify-between grid-cols-1 md:grid-cols-3 lg:grid-cols-5"
       >
-        <div class="footer-item flex flex-col gap-4 col-span-2">
+        <div class="footer-item flex flex-col items-start gap-4 col-span-3">
           <h1 class="text-2xl text-white font-bold">XPRESS</h1>
           <div class="social-icons flex gap-4">
             <a
@@ -387,12 +387,19 @@
             </a>
           </div>
 
-          <div class="line h-px w-full bg-gray-600 mt-1"></div>
+          <!-- <div class="line h-px w-full bg-gray-600 mt-1"></div> -->
           <p class="text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odit
             blanditiis earum enim expedita alias nemo quis quibusdam pariatur
-            minus!
+            minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            molestiae ut quaerat debitis ipsa! Aspernatur.
           </p>
+
+          <a
+            href="./about.html"
+            class="text-gray-400 px-4 py-2 border border-gray-400 rounded-full mt-2 hover:bg-gray-400 hover:text-black transition-colors duration-800"
+            >Know More</a
+          >
         </div>
 
         <div class="footer-item flex flex-col gap-4">
@@ -407,13 +414,32 @@
 
         <div class="footer-item flex flex-col gap-4">
           <h2 class="text-white text-lg font-bold">Contact US</h2>
-          <div class="footer-links flex flex-col gap-3">
-            <a href="" class="text-gray-400 hover:text-gray-200">Home</a>
-            <a href="" class="text-gray-400 hover:text-gray-200">Services</a>
-            <a href="" class="text-gray-400 hover:text-gray-200">Blogs</a>
-            <a href="" class="text-gray-400 hover:text-gray-200">FAQs</a>
+          <div class="contact-items flex flex-col gap-3">
+            <div
+              class="contact-item text-gray-400 hover:text-gray-200 flex items-center gap-2 cursor-pointer"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Location I, Street No. 734</p>
+            </div>
+            <div
+              class="contact-item text-gray-400 hover:text-gray-200 flex items-center gap-2 cursor-pointer"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <p>+100 XXX-XXX-XXX</p>
+            </div>
+            <div
+              class="contact-item text-gray-400 hover:text-gray-200 flex items-center gap-2 cursor-pointer"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <p>+100 OOO-OOO-OOO</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="container mx-auto h-px w-full bg-gray-600 mt-1"></div>
+      <div class="container flex justify-between mx-auto pb-10">
+        <p class="text-gray-400">© 2021 XPRESS. All rights reserved.</p>
+        <p class="text-gray-400">Powered by: Rangin Technology</p>
       </div>
     </footer>
 
