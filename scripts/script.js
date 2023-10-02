@@ -62,13 +62,14 @@ gsap.utils.toArray(".service-item").forEach((item) => {
       trigger: item,
       start: "top center",
       end: "bottom center",
-      // scrub: true,
+      scrub: true,
       // markers: true,
     },
   });
 
   tl.from(item, {
     duration: 1,
+    x: -100,
     y: -100,
     opacity: 0,
     ease: "power2.out",
@@ -103,17 +104,41 @@ gsap.utils.toArray(".blog-item").forEach((item) => {
   let tl3 = gsap.timeline({
     scrollTrigger: {
       trigger: item,
-      start: 800,
-      // start: "top center",
-      end: 1800,
+      start: "top right",
+      end: "bottom bottom -=1200",
       scrub: true,
-      // markers: true,
+      markers: true,
     },
   });
 
   tl3.from(item, {
     duration: 4,
+    opacity: 0,
+    scale: 0.5,
+    // rotation: 1,
+    skewX: -10,
+    ease: "power2.out",
+  });
+});
+
+gsap.utils.toArray(".card").forEach((card) => {
+  let tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: card,
+      // start form 400px below top center
+      start: "top center+=600",
+      end: "bottom center",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  tl4.from(card, {
+    duration: 4,
+    x: -400,
     y: 200,
+    scale: 0.2,
+    skewX: 10,
     opacity: 0,
     ease: "power2.out",
   });
