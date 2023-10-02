@@ -125,7 +125,7 @@ gsap.utils.toArray(".card").forEach((card) => {
     scrollTrigger: {
       trigger: card,
       // start form 400px below top center
-      start: "top +=1600",
+      start: "top +=1500",
       end: "bottom center",
       scrub: true,
       markers: true,
