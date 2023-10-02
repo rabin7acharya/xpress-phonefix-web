@@ -60,7 +60,7 @@ gsap.utils.toArray(".service-item").forEach((item) => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: item,
-      start: "top center",
+      start: "top +=1000",
       end: "bottom center",
       scrub: true,
       // markers: true,
@@ -70,10 +70,9 @@ gsap.utils.toArray(".service-item").forEach((item) => {
   tl.from(item, {
     duration: 1,
     x: -100,
-    y: -100,
+    y: 100,
     opacity: 0,
     ease: "power2.out",
-    stagger: 0.5,
   });
 
   let asset = item.querySelector(".service-asset");
@@ -91,7 +90,7 @@ gsap.utils.toArray(".service-item").forEach((item) => {
 
     tl2.from(asset, {
       duration: 8,
-      y: -400,
+      x: 400,
       opacity: 0,
       // amazing ease effect
       ease: "power4.out",
@@ -107,7 +106,7 @@ gsap.utils.toArray(".blog-item").forEach((item) => {
       start: "top right",
       end: "bottom bottom -=1200",
       scrub: true,
-      markers: true,
+      // markers: true,
     },
   });
 
@@ -126,10 +125,10 @@ gsap.utils.toArray(".card").forEach((card) => {
     scrollTrigger: {
       trigger: card,
       // start form 400px below top center
-      start: "top center+=600",
+      start: "top +=1600",
       end: "bottom center",
       scrub: true,
-      // markers: true,
+      markers: true,
     },
   });
 
