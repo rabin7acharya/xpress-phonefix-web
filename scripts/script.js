@@ -128,7 +128,7 @@ gsap.utils.toArray(".card").forEach((card) => {
       start: "top +=1500",
       end: "bottom center",
       scrub: true,
-      markers: true,
+      // markers: true,
     },
   });
 
@@ -140,6 +140,89 @@ gsap.utils.toArray(".card").forEach((card) => {
     skewX: 10,
     opacity: 0,
     ease: "power2.out",
+  });
+});
+
+gsap.utils.toArray(".contact-info").forEach((content) => {
+  let t = gsap.timeline({
+    scrollTrigger: {
+      trigger: content,
+      // start form 400px below top center
+      start: "top +=1500",
+      end: "bottom +=400",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  t.from(content, {
+    duration: 4,
+    x: -400,
+    scale: 0.1,
+    rotate: 25,
+    opacity: 0,
+    ease: "power2.out",
+  });
+});
+
+gsap.utils.toArray(".accordion").forEach((acc) => {
+  let t = gsap.timeline({
+    scrollTrigger: {
+      trigger: acc,
+      // start form 400px below top center
+      start: "top +=1000",
+      end: "bottom +=400",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  t.from(acc, {
+    duration: 4,
+    x: -400,
+    scale: 0.1,
+    rotate: 25,
+    opacity: 0,
+    ease: "power2.out",
+  });
+});
+
+// Select all the accordion elements
+const accordions = document.querySelectorAll(".accordion");
+const icons = document.querySelectorAll(".accordion-icon");
+
+// Function to toggle the accordion content and rotate the icon
+function toggleAccordion(index) {
+  const accordion = accordions[index];
+  const content = accordion.querySelector(".accordion-content");
+  const icon = icons[index];
+
+  if (content.classList.contains("hidden")) {
+    content.style.maxHeight = "0";
+    gsap.to(content, { maxHeight: "1000px", duration: 0.5, ease: "ease-out" });
+    gsap.to(icon, { rotate: "180deg", duration: 0.5 });
+    content.classList.remove("hidden");
+  } else {
+    gsap.to(content, {
+      maxHeight: "0",
+      duration: 0.5,
+      ease: "ease-in",
+      onComplete: hideContent,
+    });
+    gsap.to(icon, { rotate: "0deg", duration: 0.5 });
+  }
+
+  function hideContent() {
+    content.style.maxHeight = "0";
+    content.classList.add("hidden");
+  }
+}
+
+// Add click event listeners to each accordion header
+accordions.forEach((accordion, index) => {
+  const header = accordion.querySelector(".toggle-accordion");
+  header.addEventListener("click", () => {
+    toggleAccordion(index);
   });
 });
 
