@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <nav class="py-5 px-4 z-[100]">
+    <nav class="py-5 px-4">
       <div class="container mx-auto flex items-center justify-between">
         <a href="./index.html">
           <h5 class="font-bold text-2xl font-bold">XPRESS</h5></a
@@ -21,8 +23,8 @@
                 >Repair Options</a
               >
               <!-- <ul class="sub-menu p-4 bg-slate-50">
-                  1
-                </ul> -->
+                    1
+                  </ul> -->
             </li>
             <li>
               <a
@@ -31,8 +33,8 @@
                 >Services</a
               >
               <!-- <ul class="sub-menu p-4 bg-slate-50">
-                  1
-                </ul> -->
+                    1
+                  </ul> -->
             </li>
             <li>
               <a
@@ -41,8 +43,8 @@
                 >About Us</a
               >
               <!-- <ul class="sub-menu p-4 bg-slate-50">
-                  1
-                </ul> -->
+                    1
+                  </ul> -->
             </li>
 
             <li>
@@ -77,184 +79,52 @@
         </div>
       </div>
     </nav>
-    <section class="px-4 hero-section mt-5">
-      <div
-        class="container mx-auto h-[80vh] content px-5 bg-orange-100 rounded-lg relative overflow-hidden flex items-center justify-center flex-col gap-10"
-      >
-        <img
-          src="./assets/hero-asset-1.png"
-          class="hero-asset-i absolute bottom-0 z-[1]"
-          alt=""
-        />
-        <h1
-          class="text-4xl lg:text-5xl lg font-bold mt-9 text-center w-full md:w-10/12 lg:w-8/12 xl:w-6/12"
-        >
-          Authentic Repair Options & Customer Service
-        </h1>
-        <p
-          class="text-center text-zinc-500 w-full md:w-10/12 lg:w-8/12 xl:w-6/12"
-        >
-          Use overflow-auto to add scrollbars to an element in the event that
-          its content overflows the bounds of that element. content overflows
-          the bounds of that element.
-        </p>
 
-        <div class="hero-ctas flex gap-4 z-[2] mb-48">
-          <a
-            href="./contact.html"
-            class="font-semibold bg-orange-500 px-4 py-2 rounded-full text-white hover:bg-orange-600"
-            >Repair Options</a
+    <section class="models-section mt-16 mb-24">
+      <div class="container mx-auto p-5">
+        <p class="text-zinc-500 mb-2">Mobile Repairs,</p>
+        <h1 class="text-4xl font-semibold z-[1]">Find Your Device Model</h1>
+        <div class="filters tabs flex gap-4 mt-6 overflow-auto">
+          <button
+            class="font-semibold bg-black border-2 px-4 py-2 rounded-full text-white hover:bg-gray-800"
           >
-          <!-- outlined button  -->
-          <a
-            href="./contact.html"
-            class="font-semibold border border-orange-500 px-4 py-2 rounded-full text-orange-500 hover:bg-orange-600 hover:text-white"
-            >Blogs</a
+            iPhones
+          </button>
+          <button
+            class="font-semibold border-2 px-4 py-2 rounded-full text-black hover:bg-black hover:text-white"
           >
-        </div>
-      </div>
-    </section>
+            Samsung
+          </button>
+          <button
+            class="font-semibold border-2 px-4 py-2 rounded-full text-black hover:bg-black hover:text-white"
+          >
+            Redmi
+          </button>
+          <button
+            class="font-semibold border-2 px-4 py-2 rounded-full text-black hover:bg-black hover:text-white"
+          >
+            OnePlus
+          </button>
 
-    <section class="service-section px-4 my-32">
-      <div
-        class="content container mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8"
-      >
-        <div
-          class="service-item overflow-hidden relative flex flex-col gap-8 rounded-lg p-8 bg-stone-100"
-        >
-          <img
-            src="./assets/service-asset-mobile.png"
-            class="service-asset absolute top-0 right-0 z-[0] w-6/12"
-            alt=""
-          />
-          <h3 class="text-4xl font-semibold mt-24 z-[1]">
-            Mobile Phone Repairs
-          </h3>
-          <p class="text-zinc-500 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 z-[1]">
-            Use overflow-auto to add scrollbars to an element in the event that
-            its content overflows the bounds of that element. content overflows
-            the bounds of that element.
-          </p>
-          <div class="hero-ctas flex gap-4 z-[2]">
-            <a
-              href="./contact.html"
-              class="font-semibold bg-orange-500 px-4 py-2 rounded-full text-white hover:bg-orange-600"
-              >Repair Options</a
-            >
-            <!-- outlined button  -->
-            <a
-              href="./contact.html"
-              class="font-semibold border border-orange-500 px-4 py-2 rounded-full text-orange-500 hover:bg-orange-600 hover:text-white"
-              >Blogs</a
-            >
-          </div>
-        </div>
-        <div
-          class="service-item overflow-hidden relative flex flex-col gap-8 rounded-lg p-8 bg-stone-100"
-        >
-          <img
-            src="./assets/service-asset-laptop.png"
-            class="service-asset absolute top-0 right-0 z-[0] w-6/12"
-            alt=""
-          />
-          <h3 class="text-4xl font-semibold mt-24 z-[1]">Laptop Repairs</h3>
-          <p class="text-zinc-500 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 z-[1]">
-            Use overflow-auto to add scrollbars to an element in the event that
-            its content overflows the bounds of that element. content overflows
-            the bounds of that element.
-          </p>
-          <div class="hero-ctas flex gap-4 z-[2]">
-            <a
-              href="./contact.html"
-              class="font-semibold bg-orange-500 px-4 py-2 rounded-full text-white hover:bg-orange-600"
-              >Repair Options</a
-            >
-            <!-- outlined button  -->
-            <a
-              href="./contact.html"
-              class="font-semibold border border-orange-500 px-4 py-2 rounded-full text-orange-500 hover:bg-orange-600 hover:text-white"
-              >Blogs</a
-            >
-          </div>
+          <button
+            class="font-semibold border-2 px-4 py-2 rounded-full text-black hover:bg-black hover:text-white"
+          >
+            Samsung
+          </button>
+          <button
+            class="font-semibold border-2 px-4 py-2 rounded-full text-black hover:bg-black hover:text-white"
+          >
+            Redmi
+          </button>
+          <button
+            class="font-semibold border-2 px-4 py-2 rounded-full text-black hover:bg-black hover:text-white"
+          >
+            OnePlus
+          </button>
         </div>
 
         <div
-          class="service-item overflow-hidden relative flex flex-col gap-8 rounded-lg p-8 bg-stone-100"
-        >
-          <img
-            src="./assets/service-asset-tablet.png"
-            class="service-asset absolute top-0 right-0 z-[0] w-6/12"
-            alt=""
-          />
-          <h3 class="text-4xl font-semibold mt-24 z-[1]">Tablet Repairs</h3>
-          <p class="text-zinc-500 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 z-[1]">
-            Use overflow-auto to add scrollbars to an element in the event that
-            its content overflows the bounds of that element. content overflows
-            the bounds of that element.
-          </p>
-          <div class="hero-ctas flex gap-4 z-[2]">
-            <a
-              href="./contact.html"
-              class="font-semibold bg-orange-500 px-4 py-2 rounded-full text-white hover:bg-orange-600"
-              >Repair Options</a
-            >
-            <!-- outlined button  -->
-            <a
-              href="./contact.html"
-              class="font-semibold border border-orange-500 px-4 py-2 rounded-full text-orange-500 hover:bg-orange-600 hover:text-white"
-              >Blogs</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="service-item overflow-hidden relative flex flex-col gap-8 rounded-lg p-9 bg-stone-100"
-        >
-          <img
-            src="./assets/service-asset-data.png"
-            class="service-asset absolute top-0 right-0 z-[0] w-6/12"
-            alt=""
-          />
-          <h3 class="text-4xl font-semibold mt-24 z-[1]">Data Recovery</h3>
-          <p class="text-zinc-500 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 z-[1]">
-            Use overflow-auto to add scrollbars to an element in the event that
-            its content overflows the bounds of that element. content overflows
-            the bounds of that element.
-          </p>
-          <div class="hero-ctas flex gap-4 z-[2]">
-            <a
-              href="./contact.html"
-              class="font-semibold bg-orange-500 px-4 py-2 rounded-full text-white hover:bg-orange-600"
-              >Repair Options</a
-            >
-            <!-- outlined button  -->
-            <a
-              href="./contact.html"
-              class="font-semibold border border-orange-500 px-4 py-2 rounded-full text-orange-500 hover:bg-orange-600 hover:text-white"
-              >Blogs</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="popular-section px-4 my-32">
-      <div class="content container mx-auto relative">
-        <div
-          class="top-row flex bg-white flex-wrap gap-8 justify-between items-center z-[100]"
-        >
-          <h3 class="text-4xl font-semibold z-[1]">Popular Repairs</h3>
-          <div class="blog-cta">
-            <a
-              href="./contact.html"
-              class="font-semibold border border-gray-950 px-5 py-3 rounded-full hover:bg-gray-950 hover:text-white flex justify-center"
-              >Browse All
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="popular-repair-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-6"
+          class="popular-repair-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-8"
         >
           <div class="card flex flex-col gap-8">
             <div class="card-img-wrapper bg-red-100 rounded-lg overflow-hidden">
@@ -273,8 +143,10 @@
               </p>
               <a
                 href="./contact.html"
-                class="arrow-btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
-                ><svg
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
                   height="12"
@@ -306,8 +178,10 @@
               </p>
               <a
                 href="./contact.html"
-                class="arrow-btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
-                ><svg
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
                   height="12"
@@ -339,8 +213,10 @@
               </p>
               <a
                 href="./contact.html"
-                class="arrow-btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
-                ><svg
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
                   height="12"
@@ -372,8 +248,10 @@
               </p>
               <a
                 href="./contact.html"
-                class="arrow-btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
-                ><svg
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
                   height="12"
@@ -388,108 +266,144 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="blogs-section px-4 my-32">
-      <div class="content container mx-auto relative">
-        <div
-          class="top-row flex bg-white flex-wrap gap-8 justify-between items-center z-[100]"
-        >
-          <h3 class="text-4xl font-semibold z-[1]">Our Blogs & News</h3>
-          <div class="blog-cta">
-            <a
-              href="./contact.html"
-              class="font-semibold border border-gray-950 px-5 py-3 rounded-full hover:bg-gray-950 hover:text-white flex justify-center"
-              >Browse All
-            </a>
-          </div>
-        </div>
-        <div
-          class="blog-grid grid grid-cols-1 md:grid-cols-2 gap-12 mt-6 z-[0]"
-        >
-          <div class="blog-item flex flex-col gap-6">
-            <div class="img-wrapper rounded-lg w-full overflow-hidden">
+          <div class="card flex flex-col gap-8">
+            <div class="card-img-wrapper bg-red-100 rounded-lg overflow-hidden">
               <img
-                src="https://st3.depositphotos.com/1004221/13859/i/450/depositphotos_138595846-stock-photo-technical-repairs-motherboard-in-service.jpg"
+                src="https://mockups-design.com/wp-content/uploads/2022/09/Free_Iphone_14_Pro_Mockup_4.jpg"
                 alt=""
-                class="rounded-lg h-96 object-cover"
+                class="rounded-lg h-64 object-cover"
                 style="width: 100%"
               />
             </div>
-            <h1 class="text-3xl font-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
-              ipsum dolor.
-            </h1>
-            <p class="text-zinc-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis vel asperiores adipisci molestiae cupiditate illo
-              nihil? Fugit harum excepturi hic dolorum minus. Hic, laudantium?
-            </p>
-            <div class="h-px bg-zinc-400 mt-3 mb-3"></div>
-            <div class="blog-ctas flex justify-between items-center">
-              <div class="blog-cta">
-                <a
-                  href="./contact.html"
-                  class="arrow-btn font-semibold bg-gray-950 px-6 py-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="12"
-                    viewBox="0 0 26 12"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <p class="text-zinc-500">2023 . 08 . 29</p>
+            <div class="card-content flex flex-col gap-2 items-start">
+              <h1 class="text-2xl font-semibold">iPhone 14 Repairs</h1>
+              <p class="text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, quod, quae, quia qu
+              </p>
+              <a
+                href="./contact.html"
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="12"
+                  viewBox="0 0 26 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
-
-          <div class="blog-item flex flex-col gap-6">
-            <div class="img-wrapper rounded-lg w-full overflow-hidden">
+          <div class="card flex flex-col gap-8">
+            <div class="card-img-wrapper bg-red-100 rounded-lg overflow-hidden">
               <img
-                src="https://img.freepik.com/free-vector/computer-repair-support-service-isometric-illustration_1284-57663.jpg"
+                src="https://mockups-design.com/wp-content/uploads/2022/09/Free_Iphone_14_Pro_Mockup_4.jpg"
                 alt=""
-                class="rounded-lg h-96 object-cover"
+                class="rounded-lg h-64 object-cover"
                 style="width: 100%"
               />
             </div>
-            <h1 class="text-3xl font-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
-              ipsum.
-            </h1>
-            <p class="text-zinc-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis vel asperiores adipisci molestiae cupiditate illo
-              nihil? Fugit harum excepturi hic dolorum minus. Hic, laudantium?
-            </p>
-            <div class="h-px bg-zinc-400 mt-3 mb-3"></div>
-            <div class="blog-ctas flex justify-between items-center">
-              <div class="blog-cta">
-                <a
-                  href="./contact.html"
-                  class="arrow-btn font-semibold bg-gray-950 px-6 py-4 rounded-full text-white hover:bg-gray-700 flex justify-center"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="12"
-                    viewBox="0 0 26 12"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <p class="text-zinc-500">2023 . 08 . 29</p>
+            <div class="card-content flex flex-col gap-2 items-start">
+              <h1 class="text-2xl font-semibold">iPhone 14 Repairs</h1>
+              <p class="text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, quod, quae, quia qu
+              </p>
+              <a
+                href="./contact.html"
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="12"
+                  viewBox="0 0 26 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card flex flex-col gap-8">
+            <div class="card-img-wrapper bg-red-100 rounded-lg overflow-hidden">
+              <img
+                src="https://mockups-design.com/wp-content/uploads/2022/09/Free_Iphone_14_Pro_Mockup_4.jpg"
+                alt=""
+                class="rounded-lg h-64 object-cover"
+                style="width: 100%"
+              />
+            </div>
+            <div class="card-content flex flex-col gap-2 items-start">
+              <h1 class="text-2xl font-semibold">iPhone 14 Repairs</h1>
+              <p class="text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, quod, quae, quia qu
+              </p>
+              <a
+                href="./contact.html"
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="12"
+                  viewBox="0 0 26 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card flex flex-col gap-8">
+            <div class="card-img-wrapper bg-red-100 rounded-lg overflow-hidden">
+              <img
+                src="https://mockups-design.com/wp-content/uploads/2022/09/Free_Iphone_14_Pro_Mockup_4.jpg"
+                alt=""
+                class="rounded-lg h-64 object-cover"
+                style="width: 100%"
+              />
+            </div>
+            <div class="card-content flex flex-col gap-2 items-start">
+              <h1 class="text-2xl font-semibold">iPhone 14 Repairs</h1>
+              <p class="text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, quod, quae, quia qu
+              </p>
+              <a
+                href="./contact.html"
+                class="btn font-semibold bg-gray-950 px-6 py-4 mt-4 rounded-full text-white hover:bg-gray-700 flex justify-center items-center gap-2"
+              >
+                Repair Options
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="12"
+                  viewBox="0 0 26 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1 5.25C0.585787 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM25.5303 6.53033C25.8232 6.23744 25.8232 5.76257 25.5303 5.46967L20.7574 0.696701C20.4645 0.403808 19.9896 0.403808 19.6967 0.696701C19.4038 0.989594 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM1 6.75L25 6.75L25 5.25L1 5.25L1 6.75Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -525,95 +439,6 @@
             class="bg-black rounded-lg py-5 px-6 text-center text-white font-bold cursor-pointer hover:bg-gray-800 transition-colors duration-400 mt-6"
             >Read Our Story</a
           >
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section">
-      <div class="container mx-auto p-5">
-        <h3 class="text-4xl font-semibold mb-8">Frequently Asked Questions</h3>
-
-        <div class="accordion-container">
-          <div class="accordion flex flex-col bg-stone-100 rounded-lg p-8 mb-4">
-            <div
-              class="flex justify-between items-center toggle-accordion cursor-pointer select-none"
-            >
-              <h5 class="font-bold text-xl">
-                What Lorem ipsum dolor sit amet ?
-              </h5>
-              <i
-                class="fa-solid fa-circle-arrow-down text-2xl accordion-icon"
-              ></i>
-            </div>
-            <div class="accordion-content hidden">
-              <p class="text-md text-zinc-500 w-full md:w-8/12 lg:w-6/12 mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam voluptatum, quod, quae, quia quibusdam pariatur minus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                molestiae ut quaerat debitis ipsa! Aspernatur.
-              </p>
-            </div>
-          </div>
-          <div class="accordion flex flex-col bg-stone-100 rounded-lg p-8 mb-4">
-            <div
-              class="flex justify-between items-center toggle-accordion cursor-pointer select-none"
-            >
-              <h5 class="font-bold text-xl">
-                What Lorem ipsum dolor sit amet ?
-              </h5>
-              <i
-                class="fa-solid fa-circle-arrow-down text-2xl accordion-icon"
-              ></i>
-            </div>
-            <div class="accordion-content hidden">
-              <p class="text-md text-zinc-500 w-full md:w-8/12 lg:w-6/12 mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam voluptatum, quod, quae, quia quibusdam pariatur minus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                molestiae ut quaerat debitis ipsa! Aspernatur.
-              </p>
-            </div>
-          </div>
-          <div class="accordion flex flex-col bg-stone-100 rounded-lg p-8 mb-4">
-            <div
-              class="flex justify-between items-center toggle-accordion cursor-pointer select-none"
-            >
-              <h5 class="font-bold text-xl">
-                What Lorem ipsum dolor sit amet ?
-              </h5>
-              <i
-                class="fa-solid fa-circle-arrow-down text-2xl accordion-icon"
-              ></i>
-            </div>
-            <div class="accordion-content hidden">
-              <p class="text-md text-zinc-500 w-full md:w-8/12 lg:w-6/12 mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam voluptatum, quod, quae, quia quibusdam pariatur minus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                molestiae ut quaerat debitis ipsa! Aspernatur.
-              </p>
-            </div>
-          </div>
-          <div class="accordion flex flex-col bg-stone-100 rounded-lg p-8 mb-4">
-            <div
-              class="flex justify-between items-center toggle-accordion cursor-pointer select-none"
-            >
-              <h5 class="font-bold text-xl">
-                What Lorem ipsum dolor sit amet ?
-              </h5>
-              <i
-                class="fa-solid fa-circle-arrow-down text-2xl accordion-icon"
-              ></i>
-            </div>
-            <div class="accordion-content hidden">
-              <p class="text-md text-zinc-500 w-full md:w-8/12 lg:w-6/12 mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam voluptatum, quod, quae, quia quibusdam pariatur minus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                molestiae ut quaerat debitis ipsa! Aspernatur.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
