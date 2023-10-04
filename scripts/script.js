@@ -170,7 +170,7 @@ gsap.utils.toArray(".accordion").forEach((acc) => {
     scrollTrigger: {
       trigger: acc,
       // start form 400px below top center
-      start: "top +=1000",
+      start: "top +=1200",
       end: "bottom +=400",
       scrub: true,
       // markers: true,
@@ -182,6 +182,29 @@ gsap.utils.toArray(".accordion").forEach((acc) => {
     x: -400,
     scale: 0.1,
     rotate: 25,
+    opacity: 0,
+    ease: "power2.out",
+  });
+});
+
+gsap.utils.toArray(".about-content").forEach((content) => {
+  let t = gsap.timeline({
+    scrollTrigger: {
+      trigger: content,
+      // start form 400px below top center
+      start: "top +=1200",
+      end: "bottom +=400",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  t.from(content, {
+    duration: 4,
+    x: -400,
+    scale: 0.1,
+    skewX: 30,
+    // rotate: 25,
     opacity: 0,
     ease: "power2.out",
   });
@@ -199,14 +222,14 @@ function toggleAccordion(index) {
 
   if (content.classList.contains("hidden")) {
     content.style.maxHeight = "0";
-    gsap.to(content, { maxHeight: "1000px", duration: 0.5, ease: "ease-out" });
-    gsap.to(icon, { rotate: "180deg", duration: 0.5 });
+    gsap.to(content, { maxHeight: "1000px", duration: 1, ease: "power2.out" });
+    gsap.to(icon, { rotate: "180deg", duration: 1 });
     content.classList.remove("hidden");
   } else {
     gsap.to(content, {
       maxHeight: "0",
       duration: 0.5,
-      ease: "ease-in",
+      ease: "power2.out",
       onComplete: hideContent,
     });
     gsap.to(icon, { rotate: "0deg", duration: 0.5 });
