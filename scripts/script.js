@@ -114,8 +114,6 @@ gsap.utils.toArray(".blog-item").forEach((item) => {
     duration: 4,
     opacity: 0,
     scale: 0.5,
-    // rotation: 1,
-    skewX: -10,
     ease: "power2.out",
   });
 });
@@ -157,9 +155,9 @@ gsap.utils.toArray(".contact-info").forEach((content) => {
 
   t.from(content, {
     duration: 4,
-    x: -400,
+    // x: -400,
     scale: 0.1,
-    rotate: 25,
+    // rotate: 25,
     opacity: 0,
     ease: "power2.out",
   });
@@ -201,10 +199,59 @@ gsap.utils.toArray(".about-content").forEach((content) => {
 
   t.from(content, {
     duration: 4,
-    x: -400,
+    // x: -400,
     scale: 0.1,
-    skewX: 30,
+    // skewX: 30,
     // rotate: 25,
+    opacity: 0,
+    ease: "power2.out",
+  });
+});
+
+let t10 = gsap.timeline({
+  // start form 400px below top center
+  start: "top center",
+  end: "bottom center",
+});
+
+t10
+  .from(
+    //select child of .about-header
+    ".about-header > *",
+    {
+      //split down animation
+      duration: 1,
+      y: -100,
+      opacity: 0,
+      stagger: 0.2,
+
+      ease: "power2.out",
+    }
+  )
+  .from(".about-asset", {
+    duration: 1.5,
+    scale: 0.1,
+    y: -300,
+    // rotate: 25,
+    opacity: 0,
+    stagger: 0.2,
+    ease: "power2.out",
+  });
+
+gsap.utils.toArray(".fact-item").forEach((fact) => {
+  let t = gsap.timeline({
+    scrollTrigger: {
+      trigger: fact,
+      start: "top +=800",
+      end: "bottom center",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  t.from(fact, {
+    duration: 1,
+    scale: 0.1,
     opacity: 0,
     ease: "power2.out",
   });
@@ -221,7 +268,14 @@ function toggleAccordion(index) {
   const icon = icons[index];
 
   if (content.classList.contains("hidden")) {
-    content.style.maxHeight = "0";
+    gsap.from(content, {
+      duration: 1,
+      x: -100,
+      skewX: 30,
+      maxHeight: "0",
+      opacity: 0,
+      ease: "power2.out",
+    });
     gsap.to(content, { maxHeight: "1000px", duration: 1, ease: "power2.out" });
     gsap.to(icon, { rotate: "180deg", duration: 1 });
     content.classList.remove("hidden");
@@ -241,7 +295,6 @@ function toggleAccordion(index) {
   }
 }
 
-// Add click event listeners to each accordion header
 accordions.forEach((accordion, index) => {
   const header = accordion.querySelector(".toggle-accordion");
   header.addEventListener("click", () => {
