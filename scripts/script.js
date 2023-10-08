@@ -257,6 +257,56 @@ gsap.utils.toArray(".fact-item").forEach((fact) => {
   });
 });
 
+gsap.utils.toArray(".target-card").forEach((target) => {
+  let tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: target,
+      start: "top +=800",
+      end: "bottom center",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  tl4.from(target, {
+    duration: 4,
+    // x: -400,
+    scale: 0,
+    opacity: 0,
+    ease: "power2.out",
+  });
+});
+
+const hamMenu = document.querySelector(".ham");
+
+let tx = gsap.fromTo(
+  ".ham-menu",
+  {
+    clipPath: "circle(0% at 100% -100)", // set initial clip-path
+    display: "none",
+    duration: 0.8,
+  },
+  {
+    display: "flex",
+    clipPath: "circle(100% at 100% 30%)", // set final clip-path
+    duration: 1,
+    ease: "power2.out",
+    paused: true, // add this line to pause the animation on initial load
+  }
+);
+hamMenu.addEventListener("click", () => {
+  const isHidden = tx.progress() === 0;
+  isHidden ? tx.play() : tx.reverse();
+});
+
+// const tx = gsap.timeline({ paused: true });
+
+tx.to(".ham-menu", {
+  duration: 0.5,
+  rotate: 90,
+  ease: "power2.out",
+});
+
 // Select all the accordion elements
 const accordions = document.querySelectorAll(".accordion");
 const icons = document.querySelectorAll(".accordion-icon");
