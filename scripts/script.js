@@ -277,36 +277,6 @@ gsap.utils.toArray(".target-card").forEach((target) => {
   });
 });
 
-const hamMenu = document.querySelector(".ham");
-
-let tx = gsap.fromTo(
-  ".ham-menu",
-  {
-    clipPath: "circle(0% at 100% -100)", // set initial clip-path
-    display: "none",
-    duration: 0.8,
-  },
-  {
-    display: "flex",
-    clipPath: "circle(100% at 100% 30%)", // set final clip-path
-    duration: 1,
-    ease: "power2.out",
-    paused: true, // add this line to pause the animation on initial load
-  }
-);
-hamMenu.addEventListener("click", () => {
-  const isHidden = tx.progress() === 0;
-  isHidden ? tx.play() : tx.reverse();
-});
-
-// const tx = gsap.timeline({ paused: true });
-
-tx.to(".ham-menu", {
-  duration: 0.5,
-  rotate: 90,
-  ease: "power2.out",
-});
-
 // Select all the accordion elements
 const accordions = document.querySelectorAll(".accordion");
 const icons = document.querySelectorAll(".accordion-icon");
@@ -351,6 +321,71 @@ accordions.forEach((accordion, index) => {
     toggleAccordion(index);
   });
 });
+
+const hamMenu = document.querySelector(".ham");
+
+let tx = gsap.fromTo(
+  ".ham-menu",
+  {
+    clipPath: "circle(0% at 100% -100)",
+    display: "none",
+    duration: 0.8,
+  },
+  {
+    display: "flex",
+    clipPath: "circle(100% at 100% 30%)",
+    duration: 1,
+    ease: "power2.out",
+    paused: true, // add this line to pause the animation on initial load
+  }
+);
+
+hamMenu.addEventListener("click", () => {
+  const isHidden = tx.progress() === 0;
+  isHidden ? tx.play() : tx.reverse();
+});
+
+// In your script.js file, or include it within a script tag at the end of your HTML file
+
+// In your script.js file, or include it within a script tag at the end of your HTML file
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const pillCheckboxes = document.querySelectorAll(".pill-checkbox");
+
+checkboxes.forEach((checkbox, index) => {
+  let isChecked = checkbox.checked;
+
+  checkbox.addEventListener("change", () => {
+    isChecked = !isChecked;
+
+    if (isChecked) {
+      gsap.to(pillCheckboxes[index], {
+        clipPath: "circle(100% at 50% 50%)",
+        backgroundColor: "#000",
+      });
+      gsap.to(pillCheckboxes[index].querySelector(".label"), {
+        color: "white !important",
+      });
+    } else {
+      gsap.to(pillCheckboxes[index], {
+        backgroundColor: "#f5f5f4d9",
+      });
+      gsap.to(pillCheckboxes[index].querySelector(".label"), {
+        color: "black",
+      });
+    }
+  });
+});
+
+// checkbox.addEventListener("change", () => {
+//   if (checkbox.checked) {
+//     gsap.to(pillCheckbox, { backgroundColor: "#000" });
+//     gsap.to(".label", { color: "white" });
+//   } else {
+//     gsap.to(pillCheckbox, { backgroundColor: "#f5f5f4d9" });
+//     gsap.to(".label", { color: "black" });
+//   }
+// });
 
 const lenis = new Lenis();
 
