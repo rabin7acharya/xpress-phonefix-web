@@ -55,6 +55,24 @@ arrowBtn.forEach((btn) => {
   });
 });
 
+let tlHero = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "300px",
+    end: "700px",
+    scrub: true,
+    markers: true,
+  },
+});
+
+tlHero.to(".hero-section", {
+  duration: 4,
+  y: -100,
+  filter: "blur(16px)",
+  opacity: 0,
+  ease: "power2.out",
+});
+
 gsap.utils.toArray(".service-item").forEach((item) => {
   let tl = gsap.timeline({
     scrollTrigger: {
@@ -207,7 +225,6 @@ t10
     duration: 1.5,
     scale: 0.1,
     y: -300,
-    // rotate: 25,
     opacity: 0,
     stagger: 0.2,
     ease: "power2.out",
@@ -220,7 +237,6 @@ gsap.utils.toArray(".fact-item").forEach((fact) => {
       start: "top +=800",
       end: "bottom center",
       scrub: true,
-      // markers: true,
     },
   });
 
@@ -239,13 +255,11 @@ gsap.utils.toArray(".target-card").forEach((target) => {
       start: "top +=800",
       end: "bottom center",
       scrub: true,
-      // markers: true,
     },
   });
 
   tlTarget.from(target, {
     duration: 4,
-    // x: -400,
     scale: 0,
     opacity: 0,
     ease: "power2.out",
@@ -343,7 +357,6 @@ let tx = gsap.fromTo(
   {
     display: "flex",
     clipPath: "circle(100% at 100% 30%)",
-    //use webkit
     webkitClipPath: "circle(100% at 100% 30%)",
     duration: 1,
     ease: "power2.out",
@@ -355,10 +368,6 @@ hamMenu.addEventListener("click", () => {
   const isHidden = tx.progress() === 0;
   isHidden ? tx.play() : tx.reverse();
 });
-
-// In your script.js file, or include it within a script tag at the end of your HTML file
-
-// In your script.js file, or include it within a script tag at the end of your HTML file
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const pillCheckboxes = document.querySelectorAll(".pill-checkbox");
@@ -387,16 +396,6 @@ checkboxes.forEach((checkbox, index) => {
     }
   });
 });
-
-// checkbox.addEventListener("change", () => {
-//   if (checkbox.checked) {
-//     gsap.to(pillCheckbox, { backgroundColor: "#000" });
-//     gsap.to(".label", { color: "white" });
-//   } else {
-//     gsap.to(pillCheckbox, { backgroundColor: "#f5f5f4d9" });
-//     gsap.to(".label", { color: "black" });
-//   }
-// });
 
 const lenis = new Lenis();
 
