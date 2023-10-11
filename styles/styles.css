@@ -34,3 +34,7 @@ body {
   /* subtle box shadow  */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.repair-call-btn:hover svg {
+  fill: #fff;
+}
