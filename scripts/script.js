@@ -55,23 +55,22 @@ arrowBtn.forEach((btn) => {
   });
 });
 
-let tlHero = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".hero-section",
-    start: "300px",
-    end: "700px",
-    scrub: true,
-    markers: true,
-  },
-});
+// let tlHero = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".hero-section",
+//     start: "300px",
+//     end: "700px",
+//     scrub: true,
+//   },
+// });
 
-tlHero.to(".hero-section", {
-  duration: 4,
-  y: -100,
-  filter: "blur(16px)",
-  opacity: 0,
-  ease: "power2.out",
-});
+// tlHero.to(".hero-section", {
+//   duration: 4,
+//   y: -100,
+//   filter: "blur(16px)",
+//   opacity: 0,
+//   ease: "power2.out",
+// });
 
 gsap.utils.toArray(".service-item").forEach((item) => {
   let tl = gsap.timeline({

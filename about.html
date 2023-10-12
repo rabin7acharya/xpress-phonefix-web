@@ -336,7 +336,7 @@
           <a
             href=""
             class="bg-black rounded-lg py-5 px-6 text-center text-white font-bold cursor-pointer hover:bg-gray-800 transition-colors duration-400 mt-6"
-            >Read Our Story</a
+            >Repair Options</a
           >
         </div>
       </div>
@@ -454,9 +454,36 @@
             />
             <input
               type="text"
-              placeholder="Subject"
+              placeholder="Device Model"
               class="bg-stone-100 rounded-lg py-5 px-6 focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
+
+            <div class="repair-input flex flex-col gap-3">
+              <span class="text-gray-400 ms-3"
+                >Repair Options (Select one or more)</span
+              >
+              <div class="repair-option-inputs flex flex-wrap gap-4">
+                <label
+                  class="pill-checkbox px-6 py-6 rounded-full bg-stone-100 text-gray-400 inline-flex items-center cursor-pointer"
+                >
+                  <input type="checkbox" class="hidden" id="checkbox1" />
+                  Display
+                </label>
+                <label
+                  class="pill-checkbox px-6 py-6 rounded-full bg-stone-100 text-gray-400 inline-flex items-center cursor-pointer"
+                >
+                  <input type="checkbox" class="hidden" id="checkbox2" />
+                  Front Camera
+                </label>
+                <label
+                  class="pill-checkbox px-6 py-6 rounded-full bg-stone-100 text-gray-400 inline-flex items-center cursor-pointer"
+                >
+                  <input type="checkbox" class="hidden" id="checkbox3" />
+                  Battery
+                </label>
+              </div>
+            </div>
+
             <textarea
               type="text"
               placeholder="Message"
@@ -475,7 +502,7 @@
         >
           <div class="info-item flex flex-col gap-4">
             <h5 class="text-md text-zinc-500">Location</h5>
-            <div class="w-full h-px bg-zinc-400"></div>
+            <div class="w-full h-px bg-zinc-300"></div>
             <h3 class="text-2xl text-zinc-800">
               Location I, Street No. 734, <br />
               USA, Texas
@@ -483,7 +510,7 @@
           </div>
           <div class="info-item flex flex-col gap-4">
             <h5 class="text-md text-zinc-500">Working Hours</h5>
-            <div class="w-full h-px bg-zinc-400"></div>
+            <div class="w-full h-px bg-zinc-300"></div>
             <h3 class="text-2xl text-zinc-800">
               Monday to Friday, <br />
               9:00 AM to 8:00 PM
@@ -494,7 +521,7 @@
           </div>
           <div class="info-item flex flex-col gap-4">
             <h5 class="text-md text-zinc-500">Contact Info</h5>
-            <div class="w-full h-px bg-zinc-400"></div>
+            <div class="w-full h-px bg-zinc-300"></div>
             <h3 class="text-2xl text-zinc-800">+100 XXX-XXX-XXX <br /></h3>
             <a
               class="text-md text-zinc-500 cursor-pointer hover:text-zinc-900"
@@ -504,6 +531,67 @@
             </a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="map-section px-4 my-32 overflow-hidden">
+      <div
+        class="container rounded-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12"
+      >
+        <div
+          class="contact-info flex flex-col gap-12 bg-stone-50 p-12 rounded-lg"
+        >
+          <div class="info-item flex flex-col gap-4">
+            <h3 class="text-2xl font-bold">Get Directions</h3>
+            <p class="text-md text-zinc-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, dolorum? Dolore obcaecati hic est, voluptate doloribus
+              sint asperiores officiis aliquam totam mollitia saepe quaerat.
+              Dolor magnam, eos vero, quis ea.
+            </p>
+          </div>
+
+          <div class="info-item flex flex-col gap-4">
+            <h5 class="text-md text-zinc-500">Location</h5>
+            <div class="w-full h-px bg-zinc-300"></div>
+            <h3 class="text-lg text-zinc-800">
+              Location I, Street No. 734, USA, Texas
+            </h3>
+          </div>
+
+          <div class="info-item flex flex-col gap-4">
+            <h5 class="text-md text-zinc-500">Nearby Sites</h5>
+            <div class="w-full h-px bg-zinc-300"></div>
+            <h3 class="text-md text-zinc-800">
+              <div class="site"></div>
+              <span class="font-bold">1.</span> Location I, Street No. 734, USA,
+              Texas
+            </h3>
+            <h3 class="text-md text-zinc-800">
+              <div class="site"></div>
+              <span class="font-bold">2.</span> Location I, Street No. 734, USA,
+              Texas
+            </h3>
+            <h3 class="text-md text-zinc-800">
+              <div class="site"></div>
+              <span class="font-bold">3.</span> Location I, Street No. 734, USA,
+              Texas
+            </h3>
+          </div>
+        </div>
+        <iframe
+          class="contact-info"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ><a href="https://www.maps.ie/population/"
+            >Find Population on Map</a
+          ></iframe
+        >
       </div>
     </section>
 
